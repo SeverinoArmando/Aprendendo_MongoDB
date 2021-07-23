@@ -1,0 +1,293 @@
+//Criando o Database, collections e inserindo dados
+
+
+use facebook
+
+db.usuarios.insert({
+"nome": "Borges",
+"sobrenome":" Rodrigues",
+"senha":"borgerinho129",
+"cpf": 22928639190,
+"idade":21,
+"email":"borgesRodrigues1@gmail.com"
+})
+
+db.usuarios.insert({
+"nome": "Monsterah",
+"sobrenome":"Gonçalvez",
+"senha":"mustrhgonÇal",
+"cpf": 63527182459,
+"idade":19,
+"email":"Monsterah17@gmail.com"
+})
+
+db.usuarios.insert({
+"nome": "Severino",
+"sobrenome":"Armando",
+"senha":"stoverlighT!!",
+"cpf": 76253984561,
+"idade":25,
+"email":"severinoarmando3@gmail.com"
+})
+
+db.usuarios.insert({
+"nome": "Sonia",
+"sobrenome":"dos Santos",
+"senha":"soninhasants!11",
+"cpf": 36728761089,
+"idade":20,
+"email":"sonySantos28@gmail.com"
+})
+
+db.usuarios.insert({
+"nome": "Luca",
+"sobrenome":"Stark",
+"senha":"luckluc192@!",
+"cpf": 28917456372,
+"idade":27,
+"email":"lucaStark@gmail.com"
+})
+
+
+
+db.grupos.insert(
+{nome:"Grupos de Estudos",
+usuarios:[
+{"cpf": 22928639190},
+{"cpf": 63527182459},
+{"cpf": 76253984561},
+{"cpf": 28917456372},
+{"cpf": 36728761089}]})
+
+db.grupos.insert(
+{"nome":"Andando com DEUS",
+usuarios:[
+{"cpf": 28917456372},
+{"cpf": 22928639190},
+{"cpf": 63527182459},
+{"cpf": 76253984561},
+{"cpf":36728761089}
+]
+}
+)
+
+
+db.grupos.insert(
+{"nome":"Amantes da Natureza",
+usuarios:[
+{"cpf": 22928639190},
+{"cpf": 63527182459},
+{"cpf": 28917456372},
+{"cpf":36728761089},
+{"cpf": 76253984561}
+]
+}
+)
+
+
+db.grupos.insert(
+{"nome":"Como ser bom parceiro",
+usuarios:[
+{"cpf": 28917456372},
+{"cpf":36728761089},
+{"cpf": 22928639190},
+{"cpf": 63527182459},
+{"cpf": 76253984561}
+]
+}
+)
+
+
+db.grupos.insert(
+{"nome":"Aprendendo a cozinhar Com Jampier",
+usuarios:[
+{"cpf": 28917456372},
+{"cpf":36728761089},
+{"cpf": 22928639190},
+{"cpf": 63527182459},
+{"cpf": 76253984561}
+]
+}
+)
+
+
+db.amigos.insert(
+{"cpf": 76253984561,
+amigos:[
+{"cpf":22928639190,
+"nome":"Borges",
+"sobrenome":"Rodrigues"},
+
+{"cpf": 28917456372,
+"nome": "Luca",
+"sobrenome":"Stark"},
+
+{"cpf": 36728761089,
+"nome": "Sonia",
+"sobrenome":"dos Santos"},
+{"cpf":63527182459,
+"nome":"Monsterah",
+"sobrenome":"Gonçalvez"}]})
+
+db.amigos.insert(
+{"cpf": 36728761089,
+amigos:[
+{"cpf":22928639190,
+"nome":"Borges",
+"sobrenome":"Rodrigues"},
+
+{"cpf":63527182459,
+"nome":"Monsterah",
+"sobrenome":"Gonçalvez"},
+
+{"cpf": 36728761089,
+"nome": "Sonia",
+"sobrenome":"dos Santos"},
+
+{"cpf": 28917456372,
+"nome": "Luca",
+"sobrenome":"Stark"}]})
+
+db.amigos.insert(
+{"cpf": 28917456372,
+amigos:[
+
+{"cpf": 28917456372,
+"nome": "Luca",
+"sobrenome":"Stark"},
+
+{"cpf": 36728761089,
+"nome": "Sonia",
+"sobrenome":"dos Santos"},
+{"cpf":22928639190,
+"nome":"Borges",
+"sobrenome":"Rodrigues"},
+
+{"cpf":63527182459,
+"nome":"Monsterah",
+"sobrenome":"Gonçalvez"}]})
+
+db.amigos.insert(
+{"cpf": 63527182459,
+amigos:[
+{"cpf":63527182459,
+"nome":"Monsterah",
+"sobrenome":"Gonçalvez"},
+{"cpf":22928639190,
+"nome":"Borges",
+"sobrenome":"Rodrigues"},
+
+{"cpf": 28917456372,
+"nome": "Luca"},
+
+{"cpf": 36728761089,
+"nome": "Sonia",
+"sobrenome":"dos Santos"}]})
+
+
+db.posts.insert(
+{
+tipo: "imagem",
+url:UUID("https://images.pexels.com/photos/5961952/pexels-photo-5961952.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+titulo: "O amor familiar",
+cometarios:[
+{comentario:"O amor familiar é o único laço que nunca se rompe a pesar das dificuldades que se tem por se tratar de pessoas", cpf:28917456372},
+{comentario:"O amor entre duas pessoas que se amam se for verdadeiro só a morte pode separar", cpf:36728761089},
+{comentario:"Nesta imagem podemos ver que apesar da idade o sorriso transborda felicidade e amor", cpf:76253984561}
+],cpf:63527182459, data_criacao: new Date(2021,7,30)})
+
+db.posts.insert(
+{
+tipo: "imagem",
+url:UUID("https://images.pexels.com/photos/7392324/pexels-photo-7392324.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+titulo: "A Importância dos pais",
+cometarios:[
+{comentario:"É fundamental que uma criança cresca com a presença dos pais", cpf:22928639190},
+{comentario:"O primeiro amor dos filhos são os pais que o criam", cpf:63527182459},
+{comentario:"Que imagem linda. Sinto falta dos meus pais", cpf:76253984561},
+],cpf:76253984561, data_criacao: new Date(2021,5,10)})
+
+db.posts.insert(
+{
+tipo: "imagem",
+url:UUID("https://images.pexels.com/photos/3087878/pexels-photo-3087878.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+titulo: "Tradição familiar",
+cometarios:[
+{comentario:"É importante que os conhecimentos da familia seja passada para diante", cpf:228917456372},
+{comentario:"Preservando a cultura de ensino", cpf:63527182459},
+{comentario:" A ancestralidade", cpf:36728761089}],cpf:28917456372, data_criacao: new Date(2021,6,24)})
+
+db.posts.insert(
+{
+tipo: "imagem",
+url:UUID("https://images.pexels.com/photos/5961946/pexels-photo-5961946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+titulo: "O melhor amigo do home",
+cometarios:[
+{comentario:"Meu cachorro fica louco quando me vê", cpf:228917456372},
+{comentario:"Não largo meu cachorrinho por nada", cpf:76253984561},
+{comentario:"Meu cachorro me entende e sabe quando estou triste", cpf:22928639190}], 
+cpf:36728761089, data_criacao: new Date(2021,7,10)})
+
+
+//Mostrando os dados inseridos
+
+db.usuarios.find().pretty()
+
+db.grupos.find().pretty()
+
+db.amigos.find().pretty()
+
+db.posts.find().pretty()
+
+
+db.usuarios.find({$and:[{idade:{$gte:25}},{idade:{$exists:true}}]}).pretty()
+
+db.usuarios.find({_id:{$eq:ObjectId("60fb0085904a04971477abbf")}}).pretty()
+
+db.usuarios.find({$or:[{idade:{$lte:25}},{idade:34}]}).pretty()
+
+
+db.amigos.find({cpf:{$in:[63527182459,36728761089]}}).pretty()
+
+
+db.grupos.find().pretty()
+
+db.grupos.updateOne({_id:ObjectId("60fb0068904a04971477abbd")},{$set:{nome:"Pastelaria para iniciantes"}})
+
+db.grupos.find().pretty()
+
+
+db.posts.find().pretty()
+
+db.posts.updateOne({_id:{$eq: ObjectId("60faffcc904a04971477abb5")}},{$set:{titulo:"O MELHOR AMIGO DO HOMEM COM CERTEZA É O CACHORRO"}})
+
+db.usuarios.aggregate([{$lookup:{from: "posts",localField:"titulo",foreignField:"tipo",as:"Agregador"}}]).pretty()
+
+db.posts.find().pretty()
+
+db.amigos.find().pretty()
+
+db.amigos.deleteOne({cpf:63527182459})
+
+db.amigos.find().pretty()
+
+show collections
+
+db.amigos.remove({})
+
+db.amigos.find().pretty()
+
+db.posts.drop()
+
+show collections
+
+db.amigos.drop()
+
+db.grupos.drop()
+
+db.usuarios.drop()
+
+show collections
+
+
+

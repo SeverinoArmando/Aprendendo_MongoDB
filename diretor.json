@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "60f78f0a6a15eb625c25d24d"
+  },
+  "nome": "Pete Docter",
+  "nacionalidade": "Norte-americano",
+  "filmologia": [
+    {
+      "filme": "Soul",
+      "acao": "diretor e historia"
+    },
+    {
+      "filme": "Inside out",
+      "acao": "diretor e historia"
+    },
+    {
+      "filme": "Up",
+      "acao": "diretor"
+    },
+    {
+      "filme": "Wall-e",
+      "acao": "historia"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60f790176a15eb625c25d24e"
+  },
+  "nome": "Andrew Docter",
+  "filmologia": [
+    {
+      "filme": "Toy Story",
+      "acao": "Roteirista"
+    },
+    {
+      "filme": "cars",
+      "acao": "Voz  do Fred"
+    },
+    {
+      "filme": "Procurando Nemo",
+      "acao": "diretor e roteirista"
+    },
+    {
+      "filme": "Wall-e",
+      "acao": "DIretor e Roteirista"
+    },
+    {
+      "filme": "Up",
+      "acao": "produtor executivo"
+    }
+  ]
+}]

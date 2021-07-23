@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "60f790b76a15eb625c25d24f"
+  },
+  "filme_name": "Wall-e",
+  "elenco": [
+    "Wall-e",
+    "Eva",
+    "Comandante B.McCrea",
+    "Shelby Forthright",
+    "Auto",
+    "Mary",
+    "computador da Axiom"
+  ]
+},{
+  "_id": {
+    "$oid": "60f790fe6a15eb625c25d250"
+  },
+  "filme_name": "Procurando Nemo",
+  "elenco": [
+    "Nemo",
+    "Marlim",
+    "Dory",
+    "Bruce"
+  ]
+},{
+  "_id": {
+    "$oid": "60f7914f6a15eb625c25d251"
+  },
+  "filme_name": "Up altas aventuras",
+  "elenco": [
+    "Carl Fredericksen",
+    "Charles Muntz",
+    "Dug",
+    "Ellie"
+  ]
+}]

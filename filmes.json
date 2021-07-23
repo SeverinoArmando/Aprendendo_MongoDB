@@ -1,0 +1,47 @@
+[{
+  "_id": {
+    "$oid": "60f78bd56a15eb625c25d249"
+  },
+  "nome": "Divertidamente",
+  "traducao": "inside out",
+  "ano": 2015,
+  "lancamento": {
+    "$date": "2015-06-18T03:00:00Z"
+  },
+  "producao": "pixar animation studios",
+  "direcao": "Pete Docter"
+},{
+  "_id": {
+    "$oid": "60f78cc86a15eb625c25d24a"
+  },
+  "nome": "Wall-e",
+  "traducao": "Wall-e",
+  "ano": 2008,
+  "lancamento": {
+    "$date": "2008-07-27T03:00:00Z"
+  },
+  "producao": "pixar animation studios",
+  "direcao": "Andrew Stanton"
+},{
+  "_id": {
+    "$oid": "60f78d926a15eb625c25d24b"
+  },
+  "nome": "Procurando Nemo",
+  "ano": 2008,
+  "lancamento": {
+    "$date": "2003-06-30T03:00:00Z"
+  },
+  "producao": "pixar animation studios",
+  "direcao": "Andrew stanton",
+  "luz": 2008
+},{
+  "_id": {
+    "$oid": "60f78dd36a15eb625c25d24c"
+  },
+  "nome": "Up altas aventuras",
+  "ano": 2009,
+  "lancamento": {
+    "$date": "2009-06-29T03:00:00Z"
+  },
+  "direcao": "Pete Docter"
+}]
